@@ -1,0 +1,31 @@
+#reportid{
+    min-height: 750px;
+    margin-top: 2em;
+}
+
+.card {
+    box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;
+
+}
+
+body {
+    background-image: url('../../assets/topography.png');
+}
+
+.paper{
+    background-image: url('../../assets/seamless_paper_texture.png');
+}
+
+.paper2{
+    background-image: url('../../assets/lightpaperfibers.png');
+}
+
+.header{
+    padding: 1.5em;
+}
+
+.cardCreate {
+    box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;
+    
+
+}

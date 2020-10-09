@@ -1,0 +1,48 @@
+{
+  "name": "save-your-trip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install-client": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "author": "DHANYA KUNHIKRISHNAN",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
+    "compression": "^1.7.4",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "esri-leaflet": "^2.5.1",
+    "express-flash": "0.0.2",
+    "if-env": "^1.0.4",
+    "leaflet": "^1.7.1",
+    "leaflet.awesome-markers": "^2.0.5",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.8",
+    "passport": "^0.4.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-toastify": "^6.0.9",
+    "semantic-ui-react": "^2.0.0"
+  }
+}

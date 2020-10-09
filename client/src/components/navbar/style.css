@@ -1,0 +1,11 @@
+#text2 {
+    text-align: center;
+
+} 
+
+#jumbo {
+    height:100px;
+    border-bottom: 3px solid rgb(40,44,52);
+    background-color: lightgray;
+    background-image: url('../../assets/seamless_paper_texture.png');
+}
